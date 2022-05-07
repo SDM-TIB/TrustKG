@@ -6,7 +6,7 @@ Knowledge graphs (KGs) represent the convergence of knowledge and data as factua
 * Inference processed to empower metadata and data with inference to deduce new facts
 
 <p align="center">
-<img src="https://github.com/SDM-TIB/TrustKG/blob/main/images/KGraphs.png" width=50% height=50%>
+<img src="https://github.com/SDM-TIB/TrustKG/blob/main/images/KGraphs.png" width=60% height=60%>
  </p>
 
 
