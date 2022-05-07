@@ -85,7 +85,7 @@ Enrique Iglesias, Samaneh Jozashoori, Maria-Esther Vidal: Scaling Up Knowledge G
 ## Research Data Management and FAIR Data principles
 FAIR data principles emphasize the crucial role of machine-processable metadata to find, access, interoperate, and reuse data with minimal human intervention. Leibniz Data Manager is built on Semantic Web technologies to support researchers in documenting, analyzing, and sharing research datasets
 <p align="center">
-<img src="https://github.com/SDM-TIB/TrustKG/blob/main/images/ArchitectureLDM.png" width=80% height=80%>
+<img src="https://github.com/SDM-TIB/TrustKG/blob/main/images/ArchitectureLDM.png" width=90% height=90%>
  </p>
 
  [Leibniz Data Manager](https://service.tib.eu/ldmservice/) solves interoperability across repositories and integrates datasets published in other repositories. 
