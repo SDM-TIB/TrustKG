@@ -15,7 +15,7 @@ Built on the concept of knowledge-driven ecosystems, the TrustKG framework repre
 Knowledge extracted from heterogeneous sources, e.g., clinical records, scientific publications, and pharmacologic data, is integrated into knowledge graphs. Ontologies describe the meaning of the combined data, and mapping rules enable the declarative definition of the transformation and integration processes. Moreover, the TrustKG framework is assessed in terms of the methods followed for data quality assessment and curation. Lastly, the role of controlled vocabularies and ontologies in data management is discussed and their impact on transparent knowledge extraction and analytics. The following figure illustrates the main components of the TrustKG framework. The TrustKG frameowrk is partially supported by Leibniz Association in the program "Leibniz Best Minds: Programme for Women Professors", project TrustKG-Transforming Data in Trustable Insights with grant P99/2020.
 
 <p align="center">
-<img src="https://github.com/SDM-TIB/TrustKG/blob/main/images/GeneralTrustKG.png" width=50% height=50%>
+<img src="https://github.com/SDM-TIB/TrustKG/blob/main/images/GeneralTrustKG.png" width=60% height=60%>
  </p>
 
 
