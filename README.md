@@ -1,15 +1,42 @@
+# Knowledge Graphs
+Knowledge graphs (KGs) represent the convergence of knowledge and data as factual statements. KGs provide 
+* Formal specifications for represening the meaning of entities, and their relationships and properties. 
+* Taxonomic representations of entities, relationships, and classes
+* Common understandings of a domain
+* Inference processed to empower metadata and data with inference to deduce new facts
+
+<p align="center">
+<img src="https://github.com/SDM-TIB/TrustKG/blob/main/images/KGraphs.png" width=50% height=50%>
+ </p>
+
+
 # The TrustKG Framework
 Built on the concept of knowledge-driven ecosystems, the TrustKG framework represents a data ecosystem of heterogeneous data sources. 
 Knowledge extracted from heterogeneous sources, e.g., clinical records, scientific publications, and pharmacologic data, is integrated into knowledge graphs. Ontologies describe the meaning of the combined data, and mapping rules enable the declarative definition of the transformation and integration processes. Moreover, the TrustKG framework is assessed in terms of the methods followed for data quality assessment and curation. Lastly, the role of controlled vocabularies and ontologies in data management is discussed and their impact on transparent knowledge extraction and analytics. The following figure illustrates the main components of the TrustKG framework. The TrustKG frameowrk is partially supported by Leibniz Association in the program "Leibniz Best Minds: Programme for Women Professors", project TrustKG-Transforming Data in Trustable Insights with grant P99/2020.
-![TrustKG framework](https://github.com/SDM-TIB/TrustKG/blob/main/images/GeneralTrustKG.png "The TrustKG Framework") 
 
+<p align="center">
+<img src="https://github.com/SDM-TIB/TrustKG/blob/main/images/GeneralTrustKG.png" width=50% height=50%>
+ </p>
 
 
 The TrustKG framework is applied in the context of the lung cancer pilots in the EU H2020 funded project BigMedilytic (https://www.bigmedilytics.eu/), the ERA PerMed funded project P4-LUCAT (https://p4-lucat.eu/), the EU H2020 projects IASIS (https://project-iasis.eu/) and CLARIFY (https://www.clarify2020.eu/), and  ImProVIT (https://www.tib.eu/de/forschung-entwicklung/projektuebersicht/projektsteckbrief/improvit). 
-Additionally, the TrustKG framework is used to create an intelligent platform built on industry-wide value and supply chains in the context of CoyPU (https://coypu.org/), a project funded by the German Federal Ministry for Economic Affairs and Climate Protection in the artificial intelligence innovation competition (BMWK). Lastly, TrustKG provides the basis for building the PLATOON knowledge graph in the context of the EU-funded H2020 project PLATOON (https://platoon-project.eu/) with the aim to digitalize the energy sector, ad enable data exchange while ensuring privacy and sovereignty.
 
 
-The following components compose the TrustKG framework platform, ![the TrustKG components](https://github.com/SDM-TIB/TrustKG/blob/main/images/SimplifyExtendedKGC-pipeline.png "The TrustKG Components") .  
+The TrustKG framework is also applied in the industry domain. 
+
+<p align="center">
+<img src="https://github.com/SDM-TIB/TrustKG/blob/main/images/IndustrialData.png" width=80% height=80%>
+ </p>
+
+The TrustKG framework provides the basis to create an intelligent platform built on industry-wide value and supply chains in the context of CoyPU (https://coypu.org/), a project funded by the German Federal Ministry for Economic Affairs and Climate Protection in the artificial intelligence innovation competition (BMWK). Lastly, TrustKG provides the basis for building the PLATOON knowledge graph in the context of the EU-funded H2020 project PLATOON (https://platoon-project.eu/) with the aim to digitalize the energy sector, ad enable data exchange while ensuring privacy and sovereignty.
+
+
+The following components compose the TrustKG framework platform, 
+<p align="center">
+<img src="https://github.com/SDM-TIB/TrustKG/blob/main/images/SimplifyExtendedKGC-pipeline.png" width=80% height=80%>
+ </p>
+
+This video demonstrates these components in action https://www.youtube.com/watch?v=6LLNpVa9fqk
 
 # Knowledge extraction and Linking Data
 Scientific data is collected from different data sources; it is mainly characterized by the three dominant dimensions of the Vs model: volume-- very large data sets; variety-- sources in multiple data formats and models; and veracity-- data with potential biase, ambiguities, and noise. To overcome interoperability issues caused by data variety, knowledge extraction is performed to recognize entities and predicates from unstrcutured data. FALCON https://github.com/SDM-TIB/falcon2.0) performs entity and predicate recognition by linking surface forms in a short text into entities in Knowledge Graphs (KGs),e.g., UMLS, DBpedia, and Wikidata. It is guided by rules of English morphology, and tokenization and compounding Resorts to alignments among entities and labels in KGs for disambiguation. 
@@ -42,16 +69,24 @@ Jozashoori S., Sakor A., Iglesias E., Vidal M-E. EABlock: A Declarative Entity A
 Enrique Iglesias, Samaneh Jozashoori, Maria-Esther Vidal: Scaling Up Knowledge Graph Creation to Large and Heterogeneous Data Sources. CoRR abs/2201.09694 (2022). (https://arxiv.org/abs/2201.09694)
 
 # Research Data Management and FAIR Data principles
-FAIR data principles emphasize the crucial role of machine-processable metadata to find, access, interoperate, and reuse data with minimal human intervention. Leibniz Data Manager (https://service.tib.eu/ldmservice/) is built on Semantic Web technologies to support researchers in documenting, analyzing, and sharing research datasets. Leibniz Data Manager solves interoperability across repositories and integrates datasets published in other repositories. 
+FAIR data principles emphasize the crucial role of machine-processable metadata to find, access, interoperate, and reuse data with minimal human intervention. Leibniz Data Manager is built on Semantic Web technologies to support researchers in documenting, analyzing, and sharing research datasets
+<p align="center">
+<img src="https://github.com/SDM-TIB/TrustKG/blob/main/images/ArchitectureLDM.png" width=80% height=80%>
+ </p>
+
+ Leibniz Data Manager (https://service.tib.eu/ldmservice/) solves interoperability across repositories and integrates datasets published in other repositories. 
 
 Leibniz Data Manager has been reported in the following publication:
 
 Anna Beer, Mauricio Brunet, Vibhav Srivastava, and Maria-Esther Vidal. Leibniz Data Manager -- A Research Data Management System. ESWC 2022 Poster and Demos.
 
 # Federated Query Processing
-DeTrusty is a SPARQL federated query engine with the focus on the explainability and trustworthiness of the query result.
+DeTrusty (https://github.com/SDM-TIB/DeTrusty) is a SPARQL federated query engine with the focus on the explainability and trustworthiness of the query result.
 
-https://github.com/SDM-TIB/DeTrusty
+<p align="center">
+<img src="https://github.com/SDM-TIB/TrustKG/blob/main/images/VirtualDIS.png" width=70% height=70%>
+ </p>
+
 
 # SHACL Validation
 Trav-SHACL (https://github.com/SDM-TIB/Trav-SHACL) is a SHACL engine capable of planning the traversal and execution of a shape schema in a way that invalid entities are detected early and needless validations are minimized. Trav-SHACL reorders the shapes in a shape schema for efficient validation and rewrites target and constraint queries for fast detection of invalid entities.
@@ -63,7 +98,14 @@ Mónica Figuera, Philipp D. Rohde, and Maria-Esther Vidal. Trav-SHACL: Efficient
 
 # Analytics and Prediction
 Statistical and predictive methods are defined on top of the knowledge graph. Predictive problems include; Impact of drug-drug interactions in survival time, classification of patients. These methods are enhanced with contextual knowledge represented in the knowledge graph with the aim of identifying accurate predictions whose meaning can be described. 
-InterpretME is a tool for fine-grained representations, in a knowledge graph, of the main characteristics of trained machine learning models. They include data- (e.g., features' definition and SHACL validation) and model-based characteristics (e.g., relevant features, and interpretations of prediction probabilities and model decisions). InterpretME allows for the definition of a model's features over knowledge graphs; SHACL states domain integrity constraints. Moreover, InterpretME traces the steps of data collection, curation, integration, and prediction, and documents the collected metadata in a knowledge graph.
+InterpretME is a tool for fine-grained representations, in a knowledge graph, of the main characteristics of trained machine learning models. InterpretME traces metadata at dfferent stages of a predictive modeling pipeline.
+
+<p align="center">
+<img src="https://github.com/SDM-TIB/TrustKG/blob/main/images/ML%20pipelineAnnotated.png" width=50% height=50%>
+ </p>
+ 
+The traced metadata includes features' definition and SHACL validation, and model-based characteristics (e.g., relevant features, and interpretations of prediction probabilities and model decisions). InterpretME allows for the definition of a model's features over knowledge graphs; SHACL states domain integrity constraints. Moreover, InterpretME traces the steps of data collection, curation, integration, and prediction, and documents the collected metadata in a knowledge graph. 
+
 
 InterpretME is publicly available at GitHub (https://github.com/SDM-TIB/InterpretME) and Zenodo (https://doi.org/10.5281/zenodo.6523740).
 
