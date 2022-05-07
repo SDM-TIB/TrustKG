@@ -41,6 +41,13 @@ Jozashoori S., Sakor A., Iglesias E., Vidal M-E. EABlock: A Declarative Entity A
 
 Enrique Iglesias, Samaneh Jozashoori, Maria-Esther Vidal: Scaling Up Knowledge Graph Creation to Large and Heterogeneous Data Sources. CoRR abs/2201.09694 (2022). (https://arxiv.org/abs/2201.09694)
 
+# Research Data Management and FAIR Data principles
+FAIR data principles emphasize the crucial role of machine-processable metadata to find, access, interoperate, and reuse data with minimal human intervention. Leibniz Data Manager (https://service.tib.eu/ldmservice/) is built on Semantic Web technologies to support researchers in documenting, analyzing, and sharing research datasets. Leibniz Data Manager solves interoperability across repositories and integrates datasets published in other repositories. 
+
+Leibniz Data Manager has been reported in the following publication:
+
+Anna Beer, Mauricio Brunet, Vibhav Srivastava, and Maria-Esther Vidal. Leibniz Data Manager -- A Research Data Management System. ESWC 2022 Poster and Demos.
+
 # Federated Query Processing
 DeTrusty is a SPARQL federated query engine with the focus on the explainability and trustworthiness of the query result.
 
@@ -49,7 +56,7 @@ https://github.com/SDM-TIB/DeTrusty
 # SHACL Validation
 Trav-SHACL (https://github.com/SDM-TIB/Trav-SHACL) is a SHACL engine capable of planning the traversal and execution of a shape schema in a way that invalid entities are detected early and needless validations are minimized. Trav-SHACL reorders the shapes in a shape schema for efficient validation and rewrites target and constraint queries for fast detection of invalid entities.
 
-Trav-SHACL has been reported in the following publications: 
+Trav-SHACL has been reported in the following publication: 
 
 Mónica Figuera, Philipp D. Rohde, and Maria-Esther Vidal. Trav-SHACL: Efficiently Validating Networks of SHACL Constraints. The Web Conference (WWW 2021). (https://doi.org/10.1145/3442381.3449877)
 
