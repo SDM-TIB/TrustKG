@@ -1,16 +1,15 @@
-# Medical-Knowledge-Graph
-Built on the concept of knowledge-driven ecosystems, the Medical-Knowledge Graph represents a data ecosystem of health data sources. 
-Knowledge extracted from heterogeneous sources, e.g., clinical records, scientific publications, and pharmacologic data, is integrated into knowledge graphs. Ontologies describe the meaning of the combined data, and mapping rules enable the declarative definition of the transformation and integration processes. Moreover, Medical-Knowledge Graph is assessed in terms of the methods followed for data quality assessment and curation. Lastly, the role of controlled vocabularies and ontologies in health data management is discussed and their impact on transparent knowledge extraction and analytics. The following figure illustrates the main components of the Medical Knowledge Graph platform.
-![Medical Knowledge Graph Platform](https://github.com/SDM-TIB/Medical-Knowledge-Graph/blob/main/images/GeneralKGCreation.png "Medical Knowledge Graph Platform") 
+# The TrustKG Framework
+Built on the concept of knowledge-driven ecosystems, the TrustKG framework represents a data ecosystem of heterogeneous data sources. 
+Knowledge extracted from heterogeneous sources, e.g., clinical records, scientific publications, and pharmacologic data, is integrated into knowledge graphs. Ontologies describe the meaning of the combined data, and mapping rules enable the declarative definition of the transformation and integration processes. Moreover, the TrustKG framework is assessed in terms of the methods followed for data quality assessment and curation. Lastly, the role of controlled vocabularies and ontologies in data management is discussed and their impact on transparent knowledge extraction and analytics. The following figure illustrates the main components of the TrustKG framework. The TrustKG frameowrk is partially supported by Leibniz Association in the program "Leibniz Best Minds: Programme for Women Professors", project TrustKG-Transforming Data in Trustable Insights with grant P99/2020.
+![TrustKG framework](https://github.com/SDM-TIB/Medical-Knowledge-Graph/blob/main/images/GeneralKGCreation.png "The TrustKG Framework") 
 
-The Medical Knowledge Graph Platform is partially supported by Leibniz Association in the program "Leibniz Best Minds: Programme for Women Professors", project TrustKG-Transforming Data in Trustable Insights with grant P99/2020.
 
-The Medical Knowledge Graph Platform is applied in the context of the lung cancer pilots in the EU H2020 funded project BigMedilytic (https://www.bigmedilytics.eu/), the ERA PerMed funded project P4-LUCAT (https://p4-lucat.eu/), the EU H2020 projects IASIS (https://project-iasis.eu/) and CLARIFY (https://www.clarify2020.eu/), and  ImProVIT (https://www.tib.eu/de/forschung-entwicklung/projektuebersicht/projektsteckbrief/improvit). The Medical Knowledge Graph Platform has been reported in the following scientific article: 
 
-Maria-Esther Vidal, Kemele M. Endris, Samaneh Jazashoori, Ahmad Sakor, Ariam Rivas:
-Transforming Heterogeneous Data into Knowledge for Personalized Treatments - A Use Case. Datenbank-Spektrum 19(2): 95-106 (2019) 
+The TrustKG framework is applied in the context of the lung cancer pilots in the EU H2020 funded project BigMedilytic (https://www.bigmedilytics.eu/), the ERA PerMed funded project P4-LUCAT (https://p4-lucat.eu/), the EU H2020 projects IASIS (https://project-iasis.eu/) and CLARIFY (https://www.clarify2020.eu/), and  ImProVIT (https://www.tib.eu/de/forschung-entwicklung/projektuebersicht/projektsteckbrief/improvit). 
+Additionally, the TrustKG framework is used to create an intelligent platform built on industry-wide value and supply chains in the context of CoyPU (https://coypu.org/), a project funded by the German Federal Ministry for Economic Affairs and Climate Protection in the artificial intelligence innovation competition (BMWK). Lastly, TrustKG provides the basis for building the PLATOON knowledge graph in the context of the EU-funded H2020 project PLATOON (https://platoon-project.eu/) with the aim to digitalize the energy sector, ad enable data exchange while ensuring privacy and sovereignty.
 
-The following components compose the Medical Knowledge Graph platform.  
+
+The following components compose the TrustKG framework platform.  
 
 # Knowledge extraction and Linking Data
 Scientific data is collected from different data sources; it is mainly characterized by the three dominant dimensions of the Vs model: volume-- very large data sets; variety-- sources in multiple data formats and models; and veracity-- data with potential biase, ambiguities, and noise. To overcome interoperability issues caused by data variety, knowledge extraction is performed to recognize entities and predicates from unstrcutured data. FALCON https://github.com/SDM-TIB/falcon2.0) performs entity and predicate recognition by linking surface forms in a short text into entities in Knowledge Graphs (KGs),e.g., UMLS, DBpedia, and Wikidata. It is guided by rules of English morphology, and tokenization and compounding Resorts to alignments among entities and labels in KGs for disambiguation. 
@@ -26,6 +25,9 @@ Knowledge graph creation relies on mapping-driven algorithms guided by mapping r
 Mapping rules can also include knowledge extraction functions in addition to expressing  correspondences among data sources and a unified schema. Combining mapping rules and functions represents a powerful formalism to specify pipelines for integrating data into a knowledge graph transparently. EABlock is an approach integrating Entity Alignment (EA) as part of RML mapping rules. EABlock includes a block of functions performing entity recognition from textual attributes and link the recognized entities to the corresponding resources in Wikidata, DBpedia, and domain specific thesaurus, e.g., UMLS. EABlock provides agnostic and efficient techniques to evaluate the functions and transfer the mappings to facilitate its application in any RML-compliant engine. EABlock is publicly available at (https://github.com/SDM-TIB/EABlock).
 
 The Semantic data integration techniques have been reported in the following publications: 
+
+Maria-Esther Vidal, Kemele M. Endris, Samaneh Jazashoori, Ahmad Sakor, Ariam Rivas:
+Transforming Heterogeneous Data into Knowledge for Personalized Treatments - A Use Case. Datenbank-Spektrum 19(2): 95-106 (2019) 
 
 Jozashoori S., Vidal M.E. MapSDI: A Scaled-Up Semantic Data Integration Framework for Knowledge Graph Creation. OTM Conferences 2019
 
@@ -49,7 +51,7 @@ Trav-SHACL (https://github.com/SDM-TIB/Trav-SHACL) is a SHACL engine capable of 
 
 Trav-SHACL has been reported in the following publications: 
 
-Mónica Figuera, Philipp D. Rohde, and Maria-Esther Vidal. Trav-SHACL: Efficiently Validating Networks of SHACL Constraints. The Web Conference (WWW 2021). https://doi.org/10.1145/3442381.3449877
+Mónica Figuera, Philipp D. Rohde, and Maria-Esther Vidal. Trav-SHACL: Efficiently Validating Networks of SHACL Constraints. The Web Conference (WWW 2021). (https://doi.org/10.1145/3442381.3449877)
 
 
 # Analytics and Prediction
@@ -58,12 +60,15 @@ InterpretME is a tool for fine-grained representations, in a knowledge graph, of
 
 InterpretME is publicly available at GitHub (https://github.com/SDM-TIB/InterpretME) and Zenodo (https://doi.org/10.5281/zenodo.6523740).
 
-# Projects where the Medical Knowledge Graph Platform has been used
+# Where is the TrustKG framework used
 - iASiS (http://project-iasis.eu/): big data for precision medicine, based on patient data insights. The iASiS RDF knowledge graph comprises more than 1.2B RDF triples collected from more than 40 heterogeneous sources using over 1300 RML triple maps. 
 - BigMedilytics (https://www.bigmedilytics.eu/): lung cancer pilot. 800 RML triple maps are used to create the lung cancer knowledge graph from around 25 data sources with 500M RDF triples.
 - CLARIFY (https://www.clarify2020.eu/): predict poor health status after specific oncological treatments
 - P4-LUCAT (https://www.tib.eu/de/forschung-entwicklung/projektuebersicht/projektsteckbrief/p4-lucat)
 - ImProVIT (https://www.tib.eu/de/forschung-entwicklung/projektuebersicht/projektsteckbrief/improvit)
 - EUvsVirus Hackathon (April 2020) (https://blogs.tib.eu/wp/tib/2020/05/06/how-do-knowledge-graphs-contribute-to-understanding-covid-19-related-treatments/). SDM-RDFizer created the Knowledge4COVID-19 knowledge graph during the participation of the team of the Scientific Data Management group. By June 7th, 2020, this KG is comprised of 28M RDF triples describing at a fine-grained level 63527 COVID-19 scientific publications and COVID-19 related concepts (e.g., 5802 substances, 1.2M drug-drug interactions, and 103 molecular disfunctions
+- PLATOON (https://platoon-project.eu/) to generate a knowledge graph that comprises 80,762,377 resources described in terms of 220,204,301 RDF triples. The resources are part of 162 classes of the PLATOON Semantic data models. 
+- CoyPU (https://coypu.org/) to generate a platform that enables high-quality, up-to-the-minute insights into economic facts, trends, impact relationships, and forecasts.
+
 
 
