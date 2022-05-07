@@ -33,7 +33,7 @@ The TrustKG framework provides the basis to create an intelligent platform built
 
 The following components compose the TrustKG framework platform, 
 <p align="center">
-<img src="https://github.com/SDM-TIB/TrustKG/blob/main/images/SimplifyExtendedKGC-pipeline.png" width=80% height=80%>
+<img src="https://github.com/SDM-TIB/TrustKG/blob/main/images/SimplifyExtendedKGC-pipeline.png" width=100% height=100%>
  </p>
 
 This video demonstrates these components in action https://www.youtube.com/watch?v=6LLNpVa9fqk
