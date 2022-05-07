@@ -1,8 +1,11 @@
 # Medical-Knowledge-Graph
-An ecosystem of knowledge driven tools for the transformation of scientific data into a medical knowledge graph. It transforms and integrates heterogeneous data into knowledge graphs. The following figure illustrates the main components of the Medical Knowledge Graph platform.
+Built on the concept of knowledge-driven ecosystems, the Medical-Knowledge Graph represents a data ecosystem of health data sources. 
+Knowledge extracted from heterogeneous sources, e.g., clinical records, scientific publications, and pharmacologic data, is integrated into knowledge graphs. Ontologies describe the meaning of the combined data, and mapping rules enable the declarative definition of the transformation and integration processes. Moreover, Medical-Knowledge Graph is assessed in terms of the methods followed for data quality assessment and curation. Lastly, the role of controlled vocabularies and ontologies in health data management is discussed and their impact on transparent knowledge extraction and analytics. The following figure illustrates the main components of the Medical Knowledge Graph platform.
 ![Medical Knowledge Graph Platform](https://github.com/SDM-TIB/Medical-Knowledge-Graph/blob/main/images/GeneralKGCreation.png "Medical Knowledge Graph Platform") 
 
-The Medical Knowledge Graph Platform has been reported in the following scientific article: 
+The Medical Knowledge Graph Platform is partially supported by Leibniz Association in the program "Leibniz Best Minds: Programme for Women Professors", project TrustKG-Transforming Data in Trustable Insights with grant P99/2020.
+
+The Medical Knowledge Graph Platform is applied in the context of the lung cancer pilots in the EU H2020 funded project BigMedilytic (https://www.bigmedilytics.eu/), the ERA PerMed funded project P4-LUCAT (https://p4-lucat.eu/), the EU H2020 projects IASIS (https://project-iasis.eu/) and CLARIFY (https://www.clarify2020.eu/), and  ImProVIT (https://www.tib.eu/de/forschung-entwicklung/projektuebersicht/projektsteckbrief/improvit). The Medical Knowledge Graph Platform has been reported in the following scientific article: 
 
 Maria-Esther Vidal, Kemele M. Endris, Samaneh Jazashoori, Ahmad Sakor, Ariam Rivas:
 Transforming Heterogeneous Data into Knowledge for Personalized Treatments - A Use Case. Datenbank-Spektrum 19(2): 95-106 (2019) 
@@ -18,7 +21,11 @@ Sakor A., Singh K., Patel A., Vidal. M.E. Falcon 2.0: An Entity and Relation Lin
 
 # Semantic Data Integration
 The integration of the matching entities is performed over the knowledge graph by exploring concepts, relations, taxonomies, and rules represented in the knowledge graph. First, collected and curated big data is modeled using a unified schema and stored in a knowledge graph. Then, entity recognition and linking are employed for transforming textual values in the knowledge graph, e.g., descriptions and comments, into structured facts. Finally, different methods are combined to curate and complete the represented facts. 
-Knowledge graph creation relies on mapping-driven algorithms guided by mapping rules that describe entities using a unified schema. Additionally, controlled vocabularies and ontologies used by the knowledge extraction tools are represented as RDF triples as well; links between these ontologies are also included in the knowledge graph to enable the identification of entities in different vocabularies. Similarity-based methods are performed for entity matching; similarity measures are able to exploit the knowledge encoded in the knowledge graph. Hybrid approaches combine reasoning processes on top of the knowledge graph with the wisdom of experts, and enable curation and knowledge completion. The mapping language RML is utilized to declaratively specify the process of semantic integration. The SDM-RDFizer is an RML compliant engine developed by the members of the Scientific Data Management group; it implements RML mapping rules with a set of non-blocking operators and is able to scale up the creation of large knowledge graphs. The techniques implemented in the SDM-RDFizer (https://github.com/SDM-TIB/SDM-RDFizer) have been reported in the following publications: 
+Knowledge graph creation relies on mapping-driven algorithms guided by mapping rules that describe entities using a unified schema. Additionally, controlled vocabularies and ontologies used by the knowledge extraction tools are represented as RDF triples as well; links between these ontologies are also included in the knowledge graph to enable the identification of entities in different vocabularies. Similarity-based methods are performed for entity matching; similarity measures are able to exploit the knowledge encoded in the knowledge graph. Hybrid approaches combine reasoning processes on top of the knowledge graph with the wisdom of experts, and enable curation and knowledge completion. The mapping language RML is utilized to declaratively specify the process of semantic integration. The SDM-RDFizer is an RML compliant engine developed by the members of the Scientific Data Management group; it implements RML mapping rules with a set of non-blocking operators and is able to scale up the creation of large knowledge graphs. These techniques are implemented in the SDM-RDFizer (https://github.com/SDM-TIB/SDM-RDFizer).
+
+Mapping rules can also include knowledge extraction functions in addition to expressing  correspondences among data sources and a unified schema. Combining mapping rules and functions represents a powerful formalism to specify pipelines for integrating data into a knowledge graph transparently. EABlock is an approach integrating Entity Alignment (EA) as part of RML mapping rules. EABlock includes a block of functions performing entity recognition from textual attributes and link the recognized entities to the corresponding resources in Wikidata, DBpedia, and domain specific thesaurus, e.g., UMLS. EABlock provides agnostic and efficient techniques to evaluate the functions and transfer the mappings to facilitate its application in any RML-compliant engine. EABlock is publicly available at (https://github.com/SDM-TIB/EABlock).
+
+The Semantic data integration techniques have been reported in the following publications: 
 
 Jozashoori S., Vidal M.E. MapSDI: A Scaled-Up Semantic Data Integration Framework for Knowledge Graph Creation. OTM Conferences 2019
 
@@ -28,9 +35,28 @@ Iglesias E., Jozashoori S., Chaves-Fraga D., Collarana D., Vidal M.E. SDM-RDFize
 
 Jozashoori S., Chaves-Fraga D., Iglesias E., Vidal M.E., Corcho O. FunMap: Efficient Execution of Functional Mappings for Knowledge Graph Creation. ISWC 2020
 
+Jozashoori S., Sakor A., Iglesias E., Vidal M-E. EABlock: A Declarative Entity Alignment Block for Knowledge Graph Creation Pipelines. SAC 2022
+
+Enrique Iglesias, Samaneh Jozashoori, Maria-Esther Vidal: Scaling Up Knowledge Graph Creation to Large and Heterogeneous Data Sources. CoRR abs/2201.09694 (2022). (https://arxiv.org/abs/2201.09694)
+
+# Federated Query Processing
+DeTrusty is a SPARQL federated query engine with the focus on the explainability and trustworthiness of the query result.
+
+https://github.com/SDM-TIB/DeTrusty
+
+# SHACL Validation
+Trav-SHACL (https://github.com/SDM-TIB/Trav-SHACL) is a SHACL engine capable of planning the traversal and execution of a shape schema in a way that invalid entities are detected early and needless validations are minimized. Trav-SHACL reorders the shapes in a shape schema for efficient validation and rewrites target and constraint queries for fast detection of invalid entities.
+
+Trav-SHACL has been reported in the following publications: 
+
+Mónica Figuera, Philipp D. Rohde, and Maria-Esther Vidal. Trav-SHACL: Efficiently Validating Networks of SHACL Constraints. The Web Conference (WWW 2021). https://doi.org/10.1145/3442381.3449877
+
+
 # Analytics and Prediction
 Statistical and predictive methods are defined on top of the knowledge graph. Predictive problems include; Impact of drug-drug interactions in survival time, classification of patients. These methods are enhanced with contextual knowledge represented in the knowledge graph with the aim of identifying accurate predictions whose meaning can be described. 
+InterpretME is a tool for fine-grained representations, in a knowledge graph, of the main characteristics of trained machine learning models. They include data- (e.g., features' definition and SHACL validation) and model-based characteristics (e.g., relevant features, and interpretations of prediction probabilities and model decisions). InterpretME allows for the definition of a model's features over knowledge graphs; SHACL states domain integrity constraints. Moreover, InterpretME traces the steps of data collection, curation, integration, and prediction, and documents the collected metadata in a knowledge graph.
 
+InterpretME is publicly available at GitHub (https://github.com/SDM-TIB/InterpretME) and Zenodo (https://doi.org/10.5281/zenodo.6523740).
 
 # Projects where the Medical Knowledge Graph Platform has been used
 - iASiS (http://project-iasis.eu/): big data for precision medicine, based on patient data insights. The iASiS RDF knowledge graph comprises more than 1.2B RDF triples collected from more than 40 heterogeneous sources using over 1300 RML triple maps. 
@@ -38,7 +64,6 @@ Statistical and predictive methods are defined on top of the knowledge graph. Pr
 - CLARIFY (https://www.clarify2020.eu/): predict poor health status after specific oncological treatments
 - P4-LUCAT (https://www.tib.eu/de/forschung-entwicklung/projektuebersicht/projektsteckbrief/p4-lucat)
 - ImProVIT (https://www.tib.eu/de/forschung-entwicklung/projektuebersicht/projektsteckbrief/improvit)
-- PLATOON (https://platoon-project.eu/) 
 - EUvsVirus Hackathon (April 2020) (https://blogs.tib.eu/wp/tib/2020/05/06/how-do-knowledge-graphs-contribute-to-understanding-covid-19-related-treatments/). SDM-RDFizer created the Knowledge4COVID-19 knowledge graph during the participation of the team of the Scientific Data Management group. By June 7th, 2020, this KG is comprised of 28M RDF triples describing at a fine-grained level 63527 COVID-19 scientific publications and COVID-19 related concepts (e.g., 5802 substances, 1.2M drug-drug interactions, and 103 molecular disfunctions
 
 
