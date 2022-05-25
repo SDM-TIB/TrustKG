@@ -33,7 +33,7 @@ Knowledge extracted from heterogeneous sources, e.g., clinical records, scientif
  </p>
 
 
-The TrustKG framework is applied in the context of the lung cancer pilots in the EU H2020 funded project [BigMedilytics](https://www.bigmedilytics.eu/), the ERA PerMed funded project [P4-LUCAT](https://p4-lucat.eu/), the EU H2020 projects [IASIS](https://project-iasis.eu/) and [CLARIFY](https://www.clarify2020.eu/), and  [ImProVIT](https://www.tib.eu/de/forschung-entwicklung/projektuebersicht/projektsteckbrief/improvit). Moreover, TrustKG has been used in the implementation of the [Knowledge4COVID-19] (https://github.com/SDM-TIB/Knowledge4COVID-19} knowledge graph. 
+The TrustKG framework is applied in the context of the lung cancer pilots in the EU H2020 funded project [BigMedilytics](https://www.bigmedilytics.eu/), the ERA PerMed funded project [P4-LUCAT](https://p4-lucat.eu/), the EU H2020 projects [IASIS](https://project-iasis.eu/) and [CLARIFY](https://www.clarify2020.eu/), and  [ImProVIT](https://www.tib.eu/de/forschung-entwicklung/projektuebersicht/projektsteckbrief/improvit). Moreover, TrustKG has been used in the implementation of the [Knowledge4COVID-19](https://github.com/SDM-TIB/Knowledge4COVID-19) knowledge graph. 
 
 
 The TrustKG framework is also applied in the industry domain. 
